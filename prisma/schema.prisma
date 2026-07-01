@@ -1,0 +1,157 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum BookingStatus {
+  pending
+  pre_approved
+  awaiting_payment
+  confirmed
+  rejected
+  cancelled
+  completed
+}
+
+enum LocationType {
+  batumi_airport
+  hotel
+  apartment
+  city_address
+  other
+}
+
+enum PreferredMessenger {
+  whatsapp
+  telegram
+  phone
+  email
+}
+
+model Car {
+  id              String           @id @default(cuid())
+  make            String
+  model           String
+  year            Int
+  engine          String
+  transmission    String
+  fuel            String
+  seats           Int
+  bodyType        String           @map("body_type")
+  luggageCapacity String           @map("luggage_capacity")
+  location        String
+  description     String
+  active          Boolean          @default(true)
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
+  images          CarImage[]
+  bookings        BookingRequest[]
+  blockedDates    BlockedDate[]
+
+  @@map("cars")
+}
+
+model CarImage {
+  id        String  @id @default(cuid())
+  carId     String  @map("car_id")
+  url       String
+  altText   String  @map("alt_text")
+  sortOrder Int     @default(0) @map("sort_order")
+  isPrimary Boolean @default(false) @map("is_primary")
+  car       Car     @relation(fields: [carId], references: [id], onDelete: Cascade)
+
+  @@map("car_images")
+}
+
+model PricingRule {
+  id            String @id @default(cuid())
+  seasonName    String @map("season_name")
+  startMonth    Int    @map("start_month")
+  startDay      Int    @map("start_day")
+  endMonth      Int    @map("end_month")
+  endDay        Int    @map("end_day")
+  minDays       Int    @map("min_days")
+  maxDays       Int    @map("max_days")
+  dailyPriceGel Int    @map("daily_price_gel")
+
+  @@map("pricing_rules")
+}
+
+model BookingRequest {
+  id                     String             @id @default(cuid())
+  carId                  String             @map("car_id")
+  pickupDate             DateTime           @map("pickup_date")
+  pickupTime             String             @map("pickup_time")
+  returnDate             DateTime           @map("return_date")
+  returnTime             String             @map("return_time")
+  pickupLocationType     LocationType       @map("pickup_location_type")
+  pickupLocationText     String             @map("pickup_location_text")
+  dropoffLocationType    LocationType       @map("dropoff_location_type")
+  dropoffLocationText    String             @map("dropoff_location_text")
+  flightNumber           String?            @map("flight_number")
+  hotelOrApartmentName   String?            @map("hotel_or_apartment_name")
+  customerName           String             @map("customer_name")
+  customerEmail          String             @map("customer_email")
+  customerPhone          String             @map("customer_phone")
+  preferredMessenger     PreferredMessenger @map("preferred_messenger")
+  driverAge              Int                @map("driver_age")
+  drivingExperienceYears Int                @map("driving_experience_years")
+  licenceCountry         String             @map("licence_country")
+  passengersCount        Int?               @map("passengers_count")
+  luggageCount           Int?               @map("luggage_count")
+  childSeatNeeded        Boolean            @default(false) @map("child_seat_needed")
+  plannedRoute           String             @map("planned_route")
+  wantsCrossBorder       Boolean            @default(false) @map("wants_cross_border")
+  message                String?
+  status                 BookingStatus      @default(pending)
+  quotedRentalPriceGel   Int?               @map("quoted_rental_price_gel")
+  depositAmountGel       Int                @map("deposit_amount_gel")
+  deliveryFeeGel         Int                @default(0) @map("delivery_fee_gel")
+  nightSurchargeGel      Int                @default(0) @map("night_surcharge_gel")
+  language               String
+  termsAcceptedAt        DateTime           @map("terms_accepted_at")
+  createdAt              DateTime           @default(now()) @map("created_at")
+  updatedAt              DateTime           @updatedAt @map("updated_at")
+  car                    Car                @relation(fields: [carId], references: [id], onDelete: Restrict)
+
+  @@map("booking_requests")
+}
+
+model BlockedDate {
+  id        String   @id @default(cuid())
+  carId     String   @map("car_id")
+  startDate DateTime @map("start_date")
+  endDate   DateTime @map("end_date")
+  reason    String?
+  createdAt DateTime @default(now()) @map("created_at")
+  car       Car      @relation(fields: [carId], references: [id], onDelete: Cascade)
+
+  @@map("blocked_dates")
+}
+
+model Settings {
+  id                            String   @id @default(cuid())
+  ownerName                     String   @map("owner_name")
+  ownerEmail                    String   @map("owner_email")
+  ownerWhatsappNumber           String   @map("owner_whatsapp_number")
+  ownerTelegramUsername         String   @map("owner_telegram_username")
+  primaryCurrency               String   @default("GEL") @map("primary_currency")
+  showUsdEquivalent             Boolean  @default(false) @map("show_usd_equivalent")
+  usdGelExchangeRate            Decimal? @map("usd_gel_exchange_rate")
+  minimumDriverAge              Int      @default(21) @map("minimum_driver_age")
+  minimumDrivingExperienceYears Int      @default(2) @map("minimum_driving_experience_years")
+  depositAmountGel              Int      @default(300) @map("deposit_amount_gel")
+  insuranceIncluded             Boolean  @default(true) @map("insurance_included")
+  insuranceSummary              String   @map("insurance_summary")
+  insuranceExcessGel            Int?     @map("insurance_excess_gel")
+  mileagePolicy                 String   @map("mileage_policy")
+  oneDayKmLimit                 Int      @default(200) @map("one_day_km_limit")
+  extraKmPriceGel               Decimal  @default(0.50) @map("extra_km_price_gel")
+  termsVersion                  String   @default("v1") @map("terms_version")
+  privacyVersion                String   @default("v1") @map("privacy_version")
+
+  @@map("settings")
+}

@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "siteName": "Batumi Private Car Rental",
+    "siteDescription": "Request-to-book car rental in Batumi with airport delivery, hotel delivery, clear pricing, deposit details, insurance summary, and WhatsApp or Telegram contact."
+  },
+  "nav": {
+    "home": "Home",
+    "car": "Car",
+    "pricing": "Pricing",
+    "availability": "Availability",
+    "booking": "Booking",
+    "airport": "Airport delivery",
+    "hotel": "Hotel delivery",
+    "longTerm": "Long-term rental",
+    "faq": "FAQ",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "primaryAction": "Request to book"
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "options": {
+      "en": "English",
+      "ru": "Russian",
+      "tr": "Turkish",
+      "ka": "Georgian"
+    }
+  },
+  "contactLinks": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram"
+  },
+  "pricingTable": {
+    "title": "Seasonal daily pricing",
+    "season": "Season",
+    "days": "Rental length",
+    "price": "Daily price",
+    "low": "Low season",
+    "shoulder": "Shoulder season",
+    "high": "High season",
+    "dayRange": "{min}-{max} days",
+    "oneDay": "1 day",
+    "gelPerDay": "{price} GEL/day",
+    "depositTitle": "Deposit",
+    "depositValue": "300 GEL refundable deposit",
+    "mileageTitle": "Mileage",
+    "mileageValue": "Unlimited mileage for rentals of 2+ days. One-day rentals include 200 km, then 0.50 GEL per extra km.",
+    "deliveryTitle": "Delivery",
+    "deliveryValue": "Batumi city, hotel, apartment, and airport delivery: 0 GEL. Night delivery from 22:00 to 08:00: 30 GEL."
+  },
+  "bookingForm": {
+    "title": "Send a booking request",
+    "intro": "No payment is collected here. The owner checks availability and replies before anything is confirmed.",
+    "validationError": "Please check the form details and try again.",
+    "submit": "Send request",
+    "sections": {
+      "dates": "Dates and delivery",
+      "driver": "Driver details",
+      "trip": "Trip details"
+    },
+    "labels": {
+      "pickupDate": "Pickup date",
+      "pickupTime": "Pickup time",
+      "returnDate": "Return date",
+      "returnTime": "Return time",
+      "pickupLocationType": "Pickup location type",
+      "pickupLocationText": "Pickup address or notes",
+      "dropoffLocationType": "Dropoff location type",
+      "dropoffLocationText": "Dropoff address or notes",
+      "flightNumber": "Flight number",
+      "hotelOrApartmentName": "Hotel or apartment name",
+      "customerName": "Your name",
+      "customerPhone": "Phone",
+      "preferredMessenger": "Preferred messenger",
+      "customerEmail": "Email",
+      "driverAge": "Driver age",
+      "drivingExperienceYears": "Driving experience in years",
+      "licenceCountry": "Licence country",
+      "plannedRoute": "Planned route",
+      "wantsCrossBorder": "Do you want cross-border travel?",
+      "passengersCount": "Passengers",
+      "luggageCount": "Luggage pieces",
+      "childSeatNeeded": "Child seat needed",
+      "message": "Message",
+      "acceptsTerms": "I accept the rental terms"
+    },
+    "locationOptions": {
+      "batumi_airport": "Batumi Airport",
+      "hotel": "Hotel",
+      "apartment": "Apartment",
+      "city_address": "City address",
+      "other": "Other"
+    },
+    "messengerOptions": {
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "yesNo": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Request received",
+      "description": "Thank-you page for a Batumi private car rental request."
+    },
+    "title": "Your request was received.",
+    "body": "The owner will review availability, route, driver details, deposit, and delivery. Expect a reply through your preferred contact channel.",
+    "responseTime": "Typical response time: same day during local daytime hours.",
+    "primaryAction": "Open WhatsApp",
+    "secondaryAction": "Back to homepage"
+  },
+  "footer": {
+    "tagline": "One privately owned car for visitors who want simple pickup in Batumi.",
+    "contactHeading": "Direct contact",
+    "legalHeading": "Legal",
+    "copyright": "Batumi private car rental"
+  },
+  "home": {
+    "meta": {
+      "title": "Private car rental in Batumi",
+      "description": "Rent one privately owned car in Batumi with request-to-book confirmation, airport delivery, hotel delivery, clear pricing, deposit details, and direct WhatsApp or Telegram contact."
+    },
+    "hero": {
+      "title": "Rent a VW Passat in Batumi.",
+      "intro": "Automatic, petrol + LPG, delivered free in Batumi city or to Batumi Airport. Request dates first, then the owner manually confirms availability, driver details, deposit, and route.",
+      "primaryAction": "Check availability",
+      "secondaryAction": "WhatsApp / Telegram",
+      "imageAlt": "A private rental car near Batumi coastline and an airport-style terminal"
+    },
+    "highlights": [
+      {
+        "label": "Daily price",
+        "value": "from 95 GEL/day"
+      },
+      {
+        "label": "Deposit",
+        "value": "300 GEL refundable deposit"
+      },
+      {
+        "label": "Delivery",
+        "value": "Free Batumi city and airport delivery"
+      },
+      {
+        "label": "Car",
+        "value": "VW Passat 2013 automatic, petrol + LPG"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Built for Batumi arrivals",
+        "body": "The rental flow is designed for visitors landing at Batumi International Airport or staying in central Batumi hotels.",
+        "items": [
+          "Airport handover can be requested with flight time and arrival details.",
+          "Hotel delivery is available inside Batumi by prior agreement."
+        ]
+      },
+      {
+        "title": "No instant booking or payment",
+        "body": "The first version is request-to-book. Dates, pickup, deposit, and documents are confirmed directly before the rental is accepted.",
+        "items": [
+          "No online payment is collected on this website.",
+          "No customer account is required to send a booking request."
+        ]
+      },
+      {
+        "title": "Simple terms before you drive",
+        "body": "The public pages show the key rental terms before a visitor contacts the owner.",
+        "items": [
+          "Daily rate, deposit, delivery options, and insurance summary are visible.",
+          "WhatsApp and Telegram are the primary contact channels."
+        ]
+      }
+    ],
+    "finalCta": {
+      "title": "Ready to check your dates?",
+      "body": "Send your travel dates, pickup point, and preferred contact app. The owner confirms availability manually.",
+      "primaryAction": "Open contact page",
+      "secondaryAction": "Read FAQ"
+    }
+  },
+  "pages": {
+    "car": {
+      "meta": {
+        "title": "VW Passat 2013 car details",
+        "description": "Details for the Volkswagen Passat 2013 automatic petrol + LPG rental car available in Batumi."
+      },
+      "hero": {
+        "title": "Volkswagen Passat 2013 automatic.",
+        "intro": "A privately owned sedan in Batumi with a 2.5 engine, automatic transmission, petrol + LPG/gas, 5 seats, and room for 3 suitcases."
+      },
+      "sections": [
+        {
+          "title": "Car summary",
+          "body": "The car is configured for visitors who want comfortable city driving, airport pickup, hotel delivery, and longer routes inside Georgia.",
+          "items": [
+            "Volkswagen Passat 2013, 2.5 engine, automatic transmission.",
+            "Petrol + LPG/gas, 5 seats, sedan body, luggage capacity: 3 suitcases."
+          ]
+        },
+        {
+          "title": "Best use cases",
+          "body": "The Passat is a practical fit for couples, families, remote workers, and visitors who need simple delivery in Batumi.",
+          "items": [
+            "Good for Batumi city, Gonio, Botanical Garden, airport pickup, shopping, and planned Georgian routes.",
+            "Cross-border travel is forbidden unless the owner approves it in writing before pickup."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Ask about this car",
+        "body": "Share your dates and pickup point so the owner can confirm if the car is available.",
+        "primaryAction": "Request to book",
+        "secondaryAction": "View pricing"
+      }
+    },
+    "pricing": {
+      "meta": {
+        "title": "Pricing and deposit",
+        "description": "Clear daily pricing, deposit, delivery, and insurance summary for Batumi private car rental."
+      },
+      "hero": {
+        "title": "Clear pricing before you request.",
+        "intro": "Prices are stored in GEL, deposit is shown separately, and delivery fees are visible before any request is sent."
+      },
+      "sections": [
+        {
+          "title": "Rental price",
+          "body": "Seasonal daily rates start from the configured GEL table. Longer rentals receive lower daily pricing inside each season.",
+          "items": [
+            "Short rentals are confirmed manually before acceptance.",
+            "Longer rentals can be discussed through WhatsApp or Telegram."
+          ]
+        },
+        {
+          "title": "Deposit and insurance",
+          "body": "The refundable deposit is 300 GEL and is shown separately from rental price. Insurance details are confirmed before final approval.",
+          "items": [
+            "Deposit return conditions should be confirmed before pickup.",
+            "Damage responsibility and exclusions must be reviewed before driving."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Confirm your total",
+        "body": "Send dates, pickup point, and return point to receive a manual quote.",
+        "primaryAction": "Contact owner",
+        "secondaryAction": "Check availability"
+      }
+    },
+    "availability": {
+      "meta": {
+        "title": "Availability",
+        "description": "Availability placeholder for manually confirmed rental dates in Batumi."
+      },
+      "hero": {
+        "title": "Availability is confirmed manually.",
+        "intro": "A live calendar is not active yet. Send your dates through WhatsApp or Telegram and wait for owner confirmation."
+      },
+      "sections": [
+        {
+          "title": "How date checks work",
+          "body": "Visitors can request rental dates, pickup time, and return time without creating an account.",
+          "items": [
+            "The owner checks the single-car calendar manually.",
+            "A request is not a confirmed booking until the owner replies."
+          ]
+        },
+        {
+          "title": "Useful request details",
+          "body": "The more precise the travel details, the faster the owner can answer.",
+          "items": [
+            "Include arrival flight time for Batumi Airport pickup.",
+            "Include hotel name or area for city delivery."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Send your dates",
+        "body": "Use the request page or message directly on WhatsApp or Telegram.",
+        "primaryAction": "Start request",
+        "secondaryAction": "Contact"
+      }
+    },
+    "booking": {
+      "meta": {
+        "title": "Booking request",
+        "description": "Request-to-book placeholder for Batumi private car rental without online payment."
+      },
+      "hero": {
+        "title": "Request-to-book, not instant booking.",
+        "intro": "This placeholder explains the booking flow for v1. No online payment and no customer account are included."
+      },
+      "sections": [
+        {
+          "title": "What the request should include",
+          "body": "A good booking request gives enough information to confirm availability and handover logistics.",
+          "items": [
+            "Rental dates, pickup time, return time, and delivery location.",
+            "Preferred contact app, driver name, and travel context."
+          ]
+        },
+        {
+          "title": "What happens next",
+          "body": "The owner replies directly with availability, total price, deposit details, insurance summary, and document requirements.",
+          "items": [
+            "No payment is taken by this website.",
+            "The rental is confirmed only after the owner accepts the request."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Start with a message",
+        "body": "Use WhatsApp or Telegram for the fastest manual confirmation.",
+        "primaryAction": "Open contact page",
+        "secondaryAction": "Read terms"
+      }
+    },
+    "airport": {
+      "meta": {
+        "title": "Batumi Airport delivery",
+        "description": "Request car delivery at Batumi International Airport with flight-aware handover."
+      },
+      "hero": {
+        "title": "Batumi Airport delivery for arrivals.",
+        "intro": "Request handover at Batumi International Airport by sharing your flight number, arrival time, and luggage needs."
+      },
+      "sections": [
+        {
+          "title": "Arrival handover",
+          "body": "Airport delivery is useful for visitors who want to drive directly from the terminal to Batumi, Gonio, Kvariati, or nearby areas.",
+          "items": [
+            "Share flight number and arrival time when requesting.",
+            "Delays should be reported through WhatsApp or Telegram."
+          ]
+        },
+        {
+          "title": "Airport return",
+          "body": "Returning the car at the airport can be requested in advance and confirmed with the owner.",
+          "items": [
+            "Return time should match your departure plan.",
+            "Fuel, documents, deposit, and inspection are handled at handover."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Request airport delivery",
+        "body": "Send flight details and dates to confirm whether airport handover is available.",
+        "primaryAction": "Request to book",
+        "secondaryAction": "View pricing"
+      }
+    },
+    "hotel": {
+      "meta": {
+        "title": "Hotel delivery in Batumi",
+        "description": "Request car delivery to hotels and apartments inside Batumi."
+      },
+      "hero": {
+        "title": "Hotel delivery inside Batumi.",
+        "intro": "Ask for delivery to a Batumi hotel, apartment, or central pickup point when you send the booking request."
+      },
+      "sections": [
+        {
+          "title": "City handover",
+          "body": "Hotel delivery is designed for visitors staying in central Batumi who prefer not to visit a rental office.",
+          "items": [
+            "Share hotel name, address, and preferred handover time.",
+            "The owner confirms whether the location is available."
+          ]
+        },
+        {
+          "title": "Pickup and return",
+          "body": "Pickup and return can be arranged at the same place or at different Batumi locations when agreed in advance.",
+          "items": [
+            "Central Batumi locations are easiest to confirm.",
+            "Return inspection and deposit handling happen at the agreed point."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Request hotel delivery",
+        "body": "Send your hotel or apartment address with your rental dates.",
+        "primaryAction": "Contact owner",
+        "secondaryAction": "Check availability"
+      }
+    },
+    "longTerm": {
+      "meta": {
+        "title": "Long-term car rental in Batumi",
+        "description": "Longer rental requests for a VW Passat in Batumi with manual approval and clear monthly-style pricing."
+      },
+      "hero": {
+        "title": "Long-term VW Passat rental in Batumi.",
+        "intro": "Request weekly or monthly-style rental for remote work, family stays, or longer trips in Georgia. Longer rentals are manually quoted."
+      },
+      "sections": [
+        {
+          "title": "Better value for longer stays",
+          "body": "The seasonal price table becomes cheaper for longer rental lengths, with 16-30 day pricing available in every season.",
+          "items": [
+            "Low season can start from 70 GEL per day for 16-30 day rentals.",
+            "High season long rentals are manually checked because demand is higher."
+          ]
+        },
+        {
+          "title": "Good fit for remote workers and families",
+          "body": "The Passat is a comfortable sedan for Batumi city, airport pickup, shopping, day trips, and planned longer routes.",
+          "items": [
+            "Petrol + LPG/gas can lower fuel cost on longer routes.",
+            "Cross-border travel is still forbidden unless approved in writing."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Ask for a longer rental quote",
+        "body": "Send your dates, route, and delivery point so the owner can confirm availability and price.",
+        "primaryAction": "Request to book",
+        "secondaryAction": "View pricing"
+      }
+    },
+    "faq": {
+      "meta": {
+        "title": "Frequently asked questions",
+        "description": "FAQ for private car rental in Batumi, including delivery, deposit, insurance, and request-to-book details."
+      },
+      "hero": {
+        "title": "Frequently asked questions.",
+        "intro": "Answers for visitors renting one private car in Batumi through a manual request-to-book flow."
+      },
+      "sections": [
+        {
+          "title": "Booking and payment",
+          "body": "The site does not provide instant booking or online payments in v1.",
+          "items": [
+            "A request becomes a booking only after owner confirmation.",
+            "Payment details are discussed directly after availability is confirmed."
+          ]
+        },
+        {
+          "title": "Deposit, delivery, and insurance",
+          "body": "Deposit, delivery fees, and insurance details should be checked before pickup.",
+          "items": [
+            "The public deposit is USD 200 and should be refundable under agreed conditions.",
+            "Airport and hotel delivery must be confirmed with date and time."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Still have a question?",
+        "body": "Message directly and include your travel dates for a faster answer.",
+        "primaryAction": "Contact",
+        "secondaryAction": "Read terms"
+      }
+    },
+    "terms": {
+      "meta": {
+        "title": "Rental terms",
+        "description": "Terms placeholder for private car rental in Batumi."
+      },
+      "hero": {
+        "title": "Rental terms for manual confirmation.",
+        "intro": "These terms are a v1 foundation and should be reviewed by the owner before launch."
+      },
+      "sections": [
+        {
+          "title": "Request and confirmation",
+          "body": "Submitting a request does not create an automatic rental contract.",
+          "items": [
+            "The owner must confirm availability, price, deposit, documents, and delivery.",
+            "The renter should provide accurate driver and trip information."
+          ]
+        },
+        {
+          "title": "Use of the car",
+          "body": "The car should be used according to agreed rental conditions and applicable Georgian road rules.",
+          "items": [
+            "Fuel, fines, damage, late return, and cleaning rules should be agreed before pickup.",
+            "Insurance coverage, exclusions, and renter responsibility should be reviewed before driving."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Confirm terms before pickup",
+        "body": "Ask for the final rental terms during the manual confirmation step.",
+        "primaryAction": "Contact owner",
+        "secondaryAction": "Privacy policy"
+      }
+    },
+    "privacy": {
+      "meta": {
+        "title": "Privacy policy",
+        "description": "Privacy placeholder for request-to-book contact details on the Batumi private car rental site."
+      },
+      "hero": {
+        "title": "Privacy for booking requests.",
+        "intro": "This v1 site collects only the information needed to answer a rental request."
+      },
+      "sections": [
+        {
+          "title": "Information used for requests",
+          "body": "Visitors may share dates, delivery location, driver details, and contact information through the request flow or messaging apps.",
+          "items": [
+            "No customer account is created by this website.",
+            "No online payment information is collected by this website."
+          ]
+        },
+        {
+          "title": "Contact channels",
+          "body": "WhatsApp and Telegram messages are handled through those services and their own privacy practices.",
+          "items": [
+            "Only share documents after confirming the rental directly with the owner.",
+            "The final privacy policy should be reviewed before public launch."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Need privacy details?",
+        "body": "Ask how your request information will be used before sending documents.",
+        "primaryAction": "Contact",
+        "secondaryAction": "Terms"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact",
+        "description": "Contact the owner by WhatsApp or Telegram to request private car rental in Batumi."
+      },
+      "hero": {
+        "title": "Contact by WhatsApp or Telegram.",
+        "intro": "Send travel dates, pickup point, return point, and your preferred contact app. The owner confirms availability manually."
+      },
+      "sections": [
+        {
+          "title": "What to send",
+          "body": "A clear first message helps the owner answer quickly.",
+          "items": [
+            "Rental dates, pickup and return times, and delivery location.",
+            "Flight number for airport delivery or hotel name for city delivery."
+          ]
+        },
+        {
+          "title": "Before confirmation",
+          "body": "Ask for final price, deposit, insurance summary, and required documents before accepting.",
+          "items": [
+            "Do not send online payment through this website.",
+            "Confirm the handover point and return rules in writing."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Send a request",
+        "body": "Choose your preferred contact app and include your travel details.",
+        "primaryAction": "Open WhatsApp",
+        "secondaryAction": "Open Telegram"
+      }
+    }
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "siteName": "Batum Özel Araç Kiralama",
+    "siteDescription": "Batum'da talep ile onaylanan araç kiralama: havalimanı teslimatı, otel teslimatı, net fiyat, depozito bilgisi, sigorta özeti ve WhatsApp veya Telegram iletişimi."
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "car": "Araç",
+    "pricing": "Fiyatlar",
+    "availability": "Uygunluk",
+    "booking": "Talep",
+    "airport": "Havalimanı teslimatı",
+    "hotel": "Otel teslimatı",
+    "longTerm": "Uzun dönem kiralama",
+    "faq": "SSS",
+    "terms": "Şartlar",
+    "privacy": "Gizlilik",
+    "contact": "İletişim",
+    "primaryAction": "Rezervasyon talebi"
+  },
+  "languageSwitcher": {
+    "label": "Dili değiştir",
+    "options": {
+      "en": "İngilizce",
+      "ru": "Rusça",
+      "tr": "Türkçe",
+      "ka": "Gürcüce"
+    }
+  },
+  "contactLinks": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram"
+  },
+  "pricingTable": {
+    "title": "Sezonluk günlük fiyatlar",
+    "season": "Sezon",
+    "days": "Kiralama süresi",
+    "price": "Günlük fiyat",
+    "low": "Düşük sezon",
+    "shoulder": "Ara sezon",
+    "high": "Yüksek sezon",
+    "dayRange": "{min}-{max} gün",
+    "oneDay": "1 gün",
+    "gelPerDay": "{price} GEL/gün",
+    "depositTitle": "Depozito",
+    "depositValue": "300 GEL iade edilebilir depozito",
+    "mileageTitle": "Kilometre",
+    "mileageValue": "2+ günlük kiralamalarda sınırsız kilometre. 1 günlük kiralamada 200 km dahildir, sonra ek km başına 0.50 GEL.",
+    "deliveryTitle": "Teslimat",
+    "deliveryValue": "Batum şehir, otel, daire ve havalimanı teslimatı: 0 GEL. 22:00-08:00 gece teslimatı: 30 GEL."
+  },
+  "bookingForm": {
+    "title": "Kiralama talebi gönder",
+    "intro": "Burada ödeme alınmaz. Araç sahibi uygunluğu kontrol eder ve onaydan önce cevap verir.",
+    "validationError": "Lütfen form bilgilerini kontrol edip tekrar deneyin.",
+    "submit": "Talep gönder",
+    "sections": {
+      "dates": "Tarihler ve teslimat",
+      "driver": "Sürücü bilgileri",
+      "trip": "Seyahat detayları"
+    },
+    "labels": {
+      "pickupDate": "Teslim alma tarihi",
+      "pickupTime": "Teslim alma saati",
+      "returnDate": "İade tarihi",
+      "returnTime": "İade saati",
+      "pickupLocationType": "Teslim alma konumu türü",
+      "pickupLocationText": "Teslim alma adresi veya notu",
+      "dropoffLocationType": "İade konumu türü",
+      "dropoffLocationText": "İade adresi veya notu",
+      "flightNumber": "Uçuş numarası",
+      "hotelOrApartmentName": "Otel veya daire adı",
+      "customerName": "Adınız",
+      "customerPhone": "Telefon",
+      "preferredMessenger": "Tercih edilen iletişim",
+      "customerEmail": "Email",
+      "driverAge": "Sürücü yaşı",
+      "drivingExperienceYears": "Yıllık sürüş deneyimi",
+      "licenceCountry": "Ehliyet ülkesi",
+      "plannedRoute": "Planlanan rota",
+      "wantsCrossBorder": "Sınır geçişi istiyor musunuz?",
+      "passengersCount": "Yolcu sayısı",
+      "luggageCount": "Bagaj sayısı",
+      "childSeatNeeded": "Çocuk koltuğu gerekli",
+      "message": "Mesaj",
+      "acceptsTerms": "Kiralama şartlarını kabul ediyorum"
+    },
+    "locationOptions": {
+      "batumi_airport": "Batum Havalimanı",
+      "hotel": "Otel",
+      "apartment": "Daire",
+      "city_address": "Şehir adresi",
+      "other": "Diğer"
+    },
+    "messengerOptions": {
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "phone": "Telefon",
+      "email": "Email"
+    },
+    "yesNo": {
+      "yes": "Evet",
+      "no": "Hayır"
+    }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Talep alındı",
+      "description": "Batum özel araç kiralama talebi için teşekkür sayfası."
+    },
+    "title": "Talebiniz alındı.",
+    "body": "Araç sahibi uygunluğu, rotayı, sürücü bilgilerini, depozitoyu ve teslimatı kontrol eder. Yanıt tercih ettiğiniz kanaldan gelir.",
+    "responseTime": "Tipik yanıt süresi: yerel gündüz saatlerinde aynı gün.",
+    "primaryAction": "WhatsApp aç",
+    "secondaryAction": "Ana sayfaya dön"
+  },
+  "footer": {
+    "tagline": "Batum'da kolay teslim almak isteyen ziyaretçiler için tek bir özel araç.",
+    "contactHeading": "Doğrudan iletişim",
+    "legalHeading": "Yasal",
+    "copyright": "Batum özel araç kiralama"
+  },
+  "home": {
+    "meta": {
+      "title": "Batum'da özel araç kiralama",
+      "description": "Batum'da tek bir özel aracı talep ile onaylanan akış, havalimanı teslimatı, otel teslimatı, net fiyat, depozito bilgisi ve WhatsApp veya Telegram iletişimiyle kiralayın."
+    },
+    "hero": {
+      "title": "Batum'da VW Passat kiralayın.",
+      "intro": "Automatic, petrol + LPG, Batum şehir içinde veya Batum Havalimanı'na ücretsiz teslim. Önce tarihleri gönderin, ardından araç sahibi uygunluğu, sürücüyü, depozitoyu ve rotayı manuel onaylar.",
+      "primaryAction": "Uygunluğu kontrol et",
+      "secondaryAction": "WhatsApp / Telegram",
+      "imageAlt": "Batum sahili ve havalimanı tarzı terminal yakınında özel kiralık araç"
+    },
+    "highlights": [
+      {
+        "label": "Günlük fiyat",
+        "value": "95 GEL/gün'den başlayan"
+      },
+      {
+        "label": "Depozito",
+        "value": "300 GEL iade edilebilir depozito"
+      },
+      {
+        "label": "Teslimat",
+        "value": "Batum şehir ve havalimanı ücretsiz"
+      },
+      {
+        "label": "Araç",
+        "value": "VW Passat 2013 automatic, petrol + LPG"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Batum'a gelenler için",
+        "body": "Kiralama akışı Batum Uluslararası Havalimanı'na inen veya şehir merkezindeki otellerde kalan ziyaretçiler için tasarlanmıştır.",
+        "items": [
+          "Havalimanı teslimatı uçuş saati ve varış bilgileriyle talep edilebilir.",
+          "Batum içindeki otel teslimatı önceden anlaşarak yapılır."
+        ]
+      },
+      {
+        "title": "Anında rezervasyon veya ödeme yok",
+        "body": "İlk sürüm request-to-book modelidir. Tarihler, teslim noktası, depozito ve belgeler kiralama kabul edilmeden önce doğrudan onaylanır.",
+        "items": [
+          "Bu web sitesinde online ödeme alınmaz.",
+          "Talep göndermek için müşteri hesabı gerekmez."
+        ]
+      },
+      {
+        "title": "Sürüşten önce sade şartlar",
+        "body": "Herkese açık sayfalar, ziyaretçi araç sahibiyle iletişime geçmeden önce temel kiralama şartlarını gösterir.",
+        "items": [
+          "Günlük ücret, depozito, teslimat seçenekleri ve sigorta özeti görünür.",
+          "WhatsApp ve Telegram ana iletişim kanallarıdır."
+        ]
+      }
+    ],
+    "finalCta": {
+      "title": "Tarihlerinizi kontrol etmek ister misiniz?",
+      "body": "Seyahat tarihlerinizi, teslim noktanızı ve tercih ettiğiniz iletişim uygulamasını gönderin. Araç sahibi uygunluğu manuel olarak onaylar.",
+      "primaryAction": "İletişim sayfasını aç",
+      "secondaryAction": "SSS oku"
+    }
+  },
+  "pages": {
+    "car": {
+      "meta": {
+        "title": "VW Passat 2013 araç detayları",
+        "description": "Batum'da kiralanabilen Volkswagen Passat 2013 automatic petrol + LPG araç detayları."
+      },
+      "hero": {
+        "title": "Volkswagen Passat 2013 automatic.",
+        "intro": "Batum'da özel sedan: 2.5 motor, otomatik vites, petrol + LPG/gas, 5 koltuk ve 3 bavul kapasitesi."
+      },
+      "sections": [
+        {
+          "title": "Araç özeti",
+          "body": "Araç şehir içi konfor, havalimanı teslimi, otel teslimatı ve Gürcistan içi daha uzun rotalar isteyen ziyaretçiler için uygundur.",
+          "items": [
+            "Volkswagen Passat 2013, 2.5 motor, otomatik vites.",
+            "Petrol + LPG/gas, 5 koltuk, sedan gövde, bagaj kapasitesi: 3 bavul."
+          ]
+        },
+        {
+          "title": "En iyi kullanım alanları",
+          "body": "Passat çiftler, aileler, uzaktan çalışanlar ve Batum'da kolay teslimat isteyen ziyaretçiler için pratiktir.",
+          "items": [
+            "Batum şehir içi, Gonio, Botanik Bahçe, havalimanı, alışveriş ve Gürcistan içi planlı rotalar için uygundur.",
+            "Sınır geçişi, araç sahibi teslimden önce yazılı onay vermedikçe yasaktır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Bu araç hakkında sorun",
+        "body": "Araç sahibinin uygunluğu kontrol etmesi için tarihlerinizi ve teslim noktanızı paylaşın.",
+        "primaryAction": "Rezervasyon talebi",
+        "secondaryAction": "Fiyatları görüntüle"
+      }
+    },
+    "pricing": {
+      "meta": {
+        "title": "Fiyat ve depozito",
+        "description": "Batum özel araç kiralama için net günlük fiyat, depozito, teslimat ve sigorta özeti."
+      },
+      "hero": {
+        "title": "Talep göndermeden önce net fiyat.",
+        "intro": "Fiyatlar GEL olarak saklanır, depozito ayrı gösterilir ve teslimat ücretleri talep gönderilmeden önce görünür."
+      },
+      "sections": [
+        {
+          "title": "Kiralama fiyatı",
+          "body": "Sezonluk günlük ücretler GEL tablosundan gelir. Her sezonda daha uzun kiralamalar daha düşük günlük fiyat alır.",
+          "items": [
+            "Kısa kiralamalar kabulden önce manuel olarak onaylanır.",
+            "Daha uzun kiralamalar WhatsApp veya Telegram üzerinden görüşülebilir."
+          ]
+        },
+        {
+          "title": "Depozito ve sigorta",
+          "body": "İade edilebilir depozito 300 GEL'dir ve kiralama fiyatından ayrı gösterilir. Sigorta detayları nihai onaydan önce doğrulanır.",
+          "items": [
+            "Depozito iade koşulları teslim almadan önce onaylanmalıdır.",
+            "Hasar sorumluluğu ve istisnalar sürüşten önce incelenmelidir."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Toplam tutarı doğrulayın",
+        "body": "Manuel teklif almak için tarihleri, teslim ve iade noktasını gönderin.",
+        "primaryAction": "Araç sahibiyle iletişim",
+        "secondaryAction": "Uygunluğu kontrol et"
+      }
+    },
+    "availability": {
+      "meta": {
+        "title": "Uygunluk",
+        "description": "Batum'da manuel onaylanan kiralama tarihleri için uygunluk yer tutucusu."
+      },
+      "hero": {
+        "title": "Uygunluk manuel olarak onaylanır.",
+        "intro": "Canlı takvim henüz aktif değildir. Tarihlerinizi WhatsApp veya Telegram ile gönderin ve araç sahibinin onayını bekleyin."
+      },
+      "sections": [
+        {
+          "title": "Tarih kontrolü nasıl çalışır",
+          "body": "Ziyaretçiler hesap oluşturmadan kiralama tarihleri, teslim alma saati ve iade saati talep edebilir.",
+          "items": [
+            "Araç sahibi tek araç takvimini manuel olarak kontrol eder.",
+            "Araç sahibi yanıt verene kadar talep onaylı rezervasyon değildir."
+          ]
+        },
+        {
+          "title": "Faydalı talep detayları",
+          "body": "Seyahat detayları ne kadar net olursa araç sahibi o kadar hızlı cevap verebilir.",
+          "items": [
+            "Batum Havalimanı teslimi için varış uçuş saatini ekleyin.",
+            "Şehir teslimatı için otel adını veya bölgeyi ekleyin."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Tarihlerinizi gönderin",
+        "body": "Talep sayfasını kullanın veya doğrudan WhatsApp ya da Telegram üzerinden yazın.",
+        "primaryAction": "Talebi başlat",
+        "secondaryAction": "İletişim"
+      }
+    },
+    "booking": {
+      "meta": {
+        "title": "Rezervasyon talebi",
+        "description": "Batum özel araç kiralama için online ödeme olmadan request-to-book yer tutucusu."
+      },
+      "hero": {
+        "title": "Request-to-book, anında rezervasyon değil.",
+        "intro": "Bu yer tutucu v1 için rezervasyon akışını açıklar. Online ödeme ve müşteri hesabı dahil değildir."
+      },
+      "sections": [
+        {
+          "title": "Talepte neler olmalı",
+          "body": "İyi bir rezervasyon talebi, uygunluk ve teslim lojistiğini onaylamak için yeterli bilgi verir.",
+          "items": [
+            "Kiralama tarihleri, teslim alma saati, iade saati ve teslimat konumu.",
+            "Tercih edilen iletişim uygulaması, sürücü adı ve seyahat bağlamı."
+          ]
+        },
+        {
+          "title": "Sonra ne olur",
+          "body": "Araç sahibi uygunluk, toplam fiyat, depozito detayları, sigorta özeti ve belge gereklilikleriyle doğrudan yanıt verir.",
+          "items": [
+            "Bu web sitesi ödeme almaz.",
+            "Kiralama yalnızca araç sahibi talebi kabul ettikten sonra onaylanır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Bir mesajla başlayın",
+        "body": "En hızlı manuel onay için WhatsApp veya Telegram kullanın.",
+        "primaryAction": "İletişimi aç",
+        "secondaryAction": "Şartları oku"
+      }
+    },
+    "airport": {
+      "meta": {
+        "title": "Batum Havalimanı teslimatı",
+        "description": "Uçuş saatine göre teslimatla Batum Uluslararası Havalimanı'nda araç teslimi talep edin."
+      },
+      "hero": {
+        "title": "Varışlar için Batum Havalimanı teslimatı.",
+        "intro": "Uçuş numaranızı, varış saatinizi ve bagaj ihtiyacınızı paylaşarak Batum Uluslararası Havalimanı'nda teslim talep edin."
+      },
+      "sections": [
+        {
+          "title": "Varış teslimi",
+          "body": "Havalimanı teslimatı terminalden doğrudan Batum, Gonio, Kvariati veya yakın bölgelere gitmek isteyen ziyaretçiler için kullanışlıdır.",
+          "items": [
+            "Talep ederken uçuş numarası ve varış saatini paylaşın.",
+            "Gecikmeleri WhatsApp veya Telegram üzerinden bildirin."
+          ]
+        },
+        {
+          "title": "Havalimanında iade",
+          "body": "Aracı havalimanında iade etmek önceden talep edilebilir ve araç sahibiyle onaylanabilir.",
+          "items": [
+            "İade saati kalkış planınızla uyumlu olmalıdır.",
+            "Yakıt, belgeler, depozito ve kontrol teslim sırasında yapılır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Havalimanı teslimatı isteyin",
+        "body": "Havalimanı tesliminin uygun olup olmadığını doğrulamak için uçuş bilgilerini ve tarihleri gönderin.",
+        "primaryAction": "Rezervasyon talebi",
+        "secondaryAction": "Fiyatları görüntüle"
+      }
+    },
+    "hotel": {
+      "meta": {
+        "title": "Batum'da otel teslimatı",
+        "description": "Batum içindeki otel ve dairelere araç teslimatı talep edin."
+      },
+      "hero": {
+        "title": "Batum içinde otel teslimatı.",
+        "intro": "Rezervasyon talebini gönderirken Batum oteli, daire adresi veya merkezi teslim noktasını isteyin."
+      },
+      "sections": [
+        {
+          "title": "Şehir teslimi",
+          "body": "Otel teslimatı, kiralama ofisine gitmek istemeyen merkezi Batum ziyaretçileri için tasarlanmıştır.",
+          "items": [
+            "Otel adını, adresi ve tercih edilen teslim saatini paylaşın.",
+            "Araç sahibi konumun uygun olup olmadığını doğrular."
+          ]
+        },
+        {
+          "title": "Teslim alma ve iade",
+          "body": "Önceden anlaşılırsa teslim alma ve iade aynı yerde veya farklı Batum noktalarında düzenlenebilir.",
+          "items": [
+            "Merkezi Batum konumlarını doğrulamak en kolaydır.",
+            "İade kontrolü ve depozito işlemi anlaşılan noktada yapılır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Otel teslimatı isteyin",
+        "body": "Otel veya daire adresinizi kiralama tarihleriyle birlikte gönderin.",
+        "primaryAction": "Araç sahibiyle iletişim",
+        "secondaryAction": "Uygunluğu kontrol et"
+      }
+    },
+    "longTerm": {
+      "meta": {
+        "title": "Batum'da uzun dönem araç kiralama",
+        "description": "Batum'da VW Passat için manuel onaylı ve net sezonluk fiyatlı uzun dönem kiralama talepleri."
+      },
+      "hero": {
+        "title": "Batum'da uzun dönem VW Passat kiralama.",
+        "intro": "Uzaktan çalışma, aile konaklaması veya Gürcistan içinde uzun seyahatler için haftalık ya da aylık tarzda kiralama talep edin. Uzun kiralamalar manuel fiyatlandırılır."
+      },
+      "sections": [
+        {
+          "title": "Uzun konaklamalar için daha iyi değer",
+          "body": "Sezonluk fiyat tablosu daha uzun kiralama sürelerinde ucuzlar ve her sezonda 16-30 gün fiyatı bulunur.",
+          "items": [
+            "Düşük sezonda 16-30 günlük kiralama için fiyat 70 GEL/gün seviyesinden başlayabilir.",
+            "Yüksek sezonda uzun kiralamalar talep yüksek olduğu için manuel kontrol edilir."
+          ]
+        },
+        {
+          "title": "Uzaktan çalışanlar ve aileler için uygun",
+          "body": "Passat; Batum şehir içi, havalimanı teslimi, alışveriş, günübirlik geziler ve planlı uzun rotalar için konforlu bir sedandır.",
+          "items": [
+            "Petrol + LPG/gas uzun rotalarda yakıt maliyetini düşürebilir.",
+            "Sınır geçişi yazılı onay olmadan yasaktır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Uzun kiralama teklifi isteyin",
+        "body": "Uygunluk ve fiyat için tarihlerinizi, rotanızı ve teslim noktanızı gönderin.",
+        "primaryAction": "Rezervasyon talebi",
+        "secondaryAction": "Fiyatları görüntüle"
+      }
+    },
+    "faq": {
+      "meta": {
+        "title": "Sık sorulan sorular",
+        "description": "Batum özel araç kiralama için teslimat, depozito, sigorta ve request-to-book detaylarını içeren SSS."
+      },
+      "hero": {
+        "title": "Sık sorulan sorular.",
+        "intro": "Batum'da tek bir özel aracı manuel request-to-book akışıyla kiralayan ziyaretçiler için cevaplar."
+      },
+      "sections": [
+        {
+          "title": "Rezervasyon ve ödeme",
+          "body": "Site v1'de anında rezervasyon veya online ödeme sunmaz.",
+          "items": [
+            "Talep yalnızca araç sahibi onayladıktan sonra rezervasyona dönüşür.",
+            "Ödeme detayları uygunluk onaylandıktan sonra doğrudan görüşülür."
+          ]
+        },
+        {
+          "title": "Depozito, teslimat ve sigorta",
+          "body": "Depozito, teslimat ücretleri ve sigorta detayları teslim almadan önce kontrol edilmelidir.",
+          "items": [
+            "Herkese açık depozito 200 USD'dir ve anlaşılan koşullarda iade edilebilir olmalıdır.",
+            "Havalimanı ve otel teslimatı tarih ve saatle onaylanmalıdır."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Hala sorunuz var mı?",
+        "body": "Daha hızlı yanıt için doğrudan mesaj gönderin ve seyahat tarihlerinizi ekleyin.",
+        "primaryAction": "İletişim",
+        "secondaryAction": "Şartları oku"
+      }
+    },
+    "terms": {
+      "meta": {
+        "title": "Kiralama şartları",
+        "description": "Batum özel araç kiralama için şartlar yer tutucusu."
+      },
+      "hero": {
+        "title": "Manuel onay için kiralama şartları.",
+        "intro": "Bu şartlar v1 temeli olarak hazırlanmıştır ve yayın öncesinde araç sahibi tarafından incelenmelidir."
+      },
+      "sections": [
+        {
+          "title": "Talep ve onay",
+          "body": "Talep göndermek otomatik kiralama sözleşmesi oluşturmaz.",
+          "items": [
+            "Araç sahibi uygunluk, fiyat, depozito, belgeler ve teslimatı onaylamalıdır.",
+            "Kiracı doğru sürücü ve seyahat bilgisi sağlamalıdır."
+          ]
+        },
+        {
+          "title": "Aracın kullanımı",
+          "body": "Araç, anlaşılan kiralama koşullarına ve geçerli Gürcistan trafik kurallarına göre kullanılmalıdır.",
+          "items": [
+            "Yakıt, cezalar, hasar, geç iade ve temizlik kuralları teslim almadan önce anlaşılmalıdır.",
+            "Sigorta kapsamı, istisnalar ve kiracı sorumluluğu sürüşten önce incelenmelidir."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Teslim almadan önce şartları onaylayın",
+        "body": "Manuel onay adımında nihai kiralama şartlarını isteyin.",
+        "primaryAction": "Araç sahibiyle iletişim",
+        "secondaryAction": "Gizlilik politikası"
+      }
+    },
+    "privacy": {
+      "meta": {
+        "title": "Gizlilik politikası",
+        "description": "Batum özel araç kiralama sitesindeki request-to-book iletişim bilgileri için gizlilik yer tutucusu."
+      },
+      "hero": {
+        "title": "Rezervasyon talepleri için gizlilik.",
+        "intro": "Bu v1 sitesi yalnızca kiralama talebine cevap vermek için gereken bilgileri toplar."
+      },
+      "sections": [
+        {
+          "title": "Talepler için kullanılan bilgiler",
+          "body": "Ziyaretçiler talep akışı veya mesajlaşma uygulamaları üzerinden tarihleri, teslimat konumunu, sürücü bilgilerini ve iletişim bilgisini paylaşabilir.",
+          "items": [
+            "Bu web sitesi müşteri hesabı oluşturmaz.",
+            "Bu web sitesi online ödeme bilgisi toplamaz."
+          ]
+        },
+        {
+          "title": "İletişim kanalları",
+          "body": "WhatsApp ve Telegram mesajları bu servisler ve kendi gizlilik uygulamaları üzerinden yürütülür.",
+          "items": [
+            "Belgeleri yalnızca kiralamayı araç sahibiyle doğrudan onayladıktan sonra paylaşın.",
+            "Nihai gizlilik politikası herkese açık yayın öncesinde incelenmelidir."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Gizlilik detayları mı gerekiyor?",
+        "body": "Belge göndermeden önce talep bilgilerinizin nasıl kullanılacağını sorun.",
+        "primaryAction": "İletişim",
+        "secondaryAction": "Şartlar"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "İletişim",
+        "description": "Batum'da özel araç kiralama talep etmek için araç sahibiyle WhatsApp veya Telegram üzerinden iletişime geçin."
+      },
+      "hero": {
+        "title": "WhatsApp veya Telegram ile iletişim.",
+        "intro": "Seyahat tarihlerini, teslim noktasını, iade noktasını ve tercih ettiğiniz iletişim uygulamasını gönderin. Araç sahibi uygunluğu manuel onaylar."
+      },
+      "sections": [
+        {
+          "title": "Ne göndermeli",
+          "body": "Net bir ilk mesaj araç sahibinin hızlı yanıt vermesine yardımcı olur.",
+          "items": [
+            "Kiralama tarihleri, teslim alma ve iade saatleri, teslimat konumu.",
+            "Havalimanı teslimatı için uçuş numarası veya şehir teslimatı için otel adı."
+          ]
+        },
+        {
+          "title": "Onaydan önce",
+          "body": "Kabul etmeden önce nihai fiyat, depozito, sigorta özeti ve gerekli belgeleri sorun.",
+          "items": [
+            "Bu web sitesi üzerinden online ödeme göndermeyin.",
+            "Teslim noktası ve iade kurallarını yazılı olarak onaylayın."
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Talep gönder",
+        "body": "Tercih ettiğiniz iletişim uygulamasını seçin ve seyahat detaylarınızı ekleyin.",
+        "primaryAction": "WhatsApp aç",
+        "secondaryAction": "Telegram aç"
+      }
+    }
+  }
+}
