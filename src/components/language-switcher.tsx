@@ -25,7 +25,10 @@ export function LanguageSwitcher({
   const pathname = usePathname();
 
   return (
-    <nav aria-label={labels.label} className="flex flex-wrap gap-1">
+    <nav
+      aria-label={labels.label}
+      className="flex w-fit flex-wrap gap-1 rounded-full border border-[#d9e2df] bg-[#f7faf8] p-1"
+    >
       {locales.map((locale) => {
         const isActive = locale === currentLocale;
 
@@ -33,10 +36,10 @@ export function LanguageSwitcher({
           <Link
             aria-current={isActive ? "page" : undefined}
             className={[
-              "rounded-full border px-3 py-1 text-xs font-semibold transition",
+              "rounded-full px-2.5 py-1 text-[10px] font-bold uppercase leading-5 transition xl:px-3 xl:text-[11px]",
               isActive
-                ? "border-sky-700 bg-sky-700 text-white"
-                : "border-slate-200 bg-white text-slate-700 hover:border-sky-300 hover:text-sky-800",
+                ? "bg-white text-[#101820] shadow-sm"
+                : "text-[#65747c] hover:text-[#0f5f71]",
             ].join(" ")}
             href={localeHref(pathname, locale)}
             key={locale}

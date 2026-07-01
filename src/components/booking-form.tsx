@@ -29,15 +29,18 @@ function Field({
   label: string;
 }) {
   return (
-    <label className="grid gap-2 text-sm font-semibold text-slate-900">
-      <span>{label}</span>
+    <label className="grid gap-2 text-sm font-semibold text-[#101820]">
+      <span className="leading-5">{label}</span>
       {children}
     </label>
   );
 }
 
 const inputClass =
-  "min-h-11 rounded-xl border border-slate-300 bg-white px-3 text-sm font-medium text-slate-950 outline-none transition focus:border-sky-600 focus:ring-4 focus:ring-sky-100";
+  "min-h-12 rounded-xl border border-[#c8d5d1] bg-white px-3 text-sm font-medium text-[#101820] outline-none transition placeholder:text-[#8a969b] focus:border-[#0f5f71] focus:ring-4 focus:ring-[#0f5f71]/10";
+
+const fieldsetClass =
+  "motion-fade-up grid gap-5 border-t border-[#d9e2df] pt-7";
 
 export function BookingForm({ labels, locale }: BookingFormProps) {
   const [state, action, isPending] = useActionState(submitBookingRequest, {
@@ -46,32 +49,32 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
   });
 
   return (
-    <section className="border-y border-slate-200 bg-sky-50/50">
-      <div className="mx-auto max-w-5xl px-5 py-12 lg:px-8">
-        <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-normal text-slate-950">
+    <section className="border-y border-[#d9e2df] bg-[#f7faf8]">
+      <div className="mx-auto max-w-[1040px] px-5 py-14 lg:px-8">
+        <div className="border border-[#d9e2df] bg-white shadow-sm">
+          <div className="border-b border-[#d9e2df] p-5 sm:p-8">
+            <h2 className="motion-fade-up text-3xl font-semibold tracking-normal text-[#101820] sm:text-4xl">
               {labels.title}
             </h2>
-            <p className="mt-3 text-base leading-7 text-slate-600">
+            <p className="motion-fade-up mt-3 max-w-2xl text-base leading-7 text-[#42515a] [--delay:80ms]">
               {labels.intro}
             </p>
           </div>
 
           {state.status === "error" ? (
-            <p className="mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800">
+            <p className="mx-5 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800 sm:mx-8">
               {labels.validationError}
             </p>
           ) : null}
 
-          <form action={action} className="mt-8 grid gap-8">
+          <form action={action} className="grid gap-8 p-5 sm:p-8">
             <input name="locale" type="hidden" value={locale} />
 
-            <fieldset className="grid gap-4">
-              <legend className="text-lg font-bold text-slate-950">
+            <fieldset className={fieldsetClass}>
+              <legend className="text-lg font-semibold text-[#101820]">
                 {labels.sections.dates}
               </legend>
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Field label={labels.labels.pickupDate}>
                   <input
                     className={inputClass}
@@ -163,11 +166,11 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
               </div>
             </fieldset>
 
-            <fieldset className="grid gap-4">
-              <legend className="text-lg font-bold text-slate-950">
+            <fieldset className={`${fieldsetClass} [--delay:80ms]`}>
+              <legend className="text-lg font-semibold text-[#101820]">
                 {labels.sections.driver}
               </legend>
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Field label={labels.labels.customerName}>
                   <input
                     className={inputClass}
@@ -235,8 +238,8 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
               </div>
             </fieldset>
 
-            <fieldset className="grid gap-4">
-              <legend className="text-lg font-bold text-slate-950">
+            <fieldset className={`${fieldsetClass} [--delay:160ms]`}>
+              <legend className="text-lg font-semibold text-[#101820]">
                 {labels.sections.trip}
               </legend>
               <div className="grid gap-4 md:grid-cols-2">
@@ -283,16 +286,20 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
                     type="number"
                   />
                 </Field>
-                <label className="flex items-center gap-3 rounded-2xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900">
-                  <input name="childSeatNeeded" type="checkbox" />
+                <label className="flex min-h-12 items-center gap-3 rounded-xl border border-[#d9e2df] bg-white px-4 py-3 text-sm font-semibold text-[#101820] transition hover:border-[#0f5f71]/35">
+                  <input
+                    className="size-4 accent-[#0f5f71]"
+                    name="childSeatNeeded"
+                    type="checkbox"
+                  />
                   {labels.labels.childSeatNeeded}
                 </label>
               </div>
             </fieldset>
 
-            <label className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900">
+            <label className="motion-fade-up flex items-start gap-3 rounded-xl border border-[#d9e2df] bg-[#f7faf8] px-4 py-3 text-sm font-semibold text-[#101820] [--delay:220ms]">
               <input
-                className="mt-1"
+                className="mt-1 size-4 accent-[#0f5f71]"
                 name="acceptsTerms"
                 required
                 type="checkbox"
@@ -301,11 +308,11 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
             </label>
 
             <button
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-red-700 px-6 text-sm font-semibold text-white shadow-sm transition hover:bg-red-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit"
+              className="motion-shine inline-flex min-h-12 items-center justify-center rounded-full bg-[#101820] px-7 text-sm font-semibold text-white shadow-lg shadow-slate-300/60 transition hover:bg-[#183f36] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit"
               disabled={isPending}
               type="submit"
             >
-              {labels.submit}
+              <span className="relative z-10">{labels.submit}</span>
             </button>
           </form>
         </div>

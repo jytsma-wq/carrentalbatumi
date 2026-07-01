@@ -2,7 +2,10 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #101820;
+  --sea: #0f5f71;
+  --moss: #183f36;
+  --line: #d9e2df;
 }
 
 @theme inline {
@@ -26,6 +29,8 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -34,4 +39,137 @@ html {
 
 img {
   max-width: 100%;
+}
+
+::selection {
+  background: rgba(15, 95, 113, 0.16);
+  color: #071114;
+}
+
+.motion-fade-up {
+  animation: fade-up 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+.motion-drift {
+  animation: image-drift 18s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.motion-line {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 760;
+  animation: route-draw 2200ms cubic-bezier(0.22, 1, 0.36, 1) 280ms forwards;
+}
+
+.motion-pulse {
+  animation: soft-pulse 2400ms ease-in-out infinite;
+}
+
+.motion-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.motion-shine::after {
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 45%,
+    transparent 70%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(-125%);
+  animation: button-shine 4200ms ease-in-out infinite;
+}
+
+.lift-hover {
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.lift-hover:hover {
+  border-color: rgba(15, 95, 113, 0.28);
+  box-shadow: 0 24px 70px rgba(16, 24, 32, 0.1);
+  transform: translateY(-3px);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes image-drift {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: scale(1.075) translate3d(-1.4%, -0.8%, 0);
+  }
+}
+
+@keyframes route-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.28);
+  }
+}
+
+@keyframes button-shine {
+  0%,
+  62% {
+    transform: translateX(-125%);
+  }
+
+  100% {
+    transform: translateX(125%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .motion-fade-up {
+    opacity: 1;
+    transform: none;
+  }
+
+  .lift-hover:hover {
+    transform: none;
+  }
 }

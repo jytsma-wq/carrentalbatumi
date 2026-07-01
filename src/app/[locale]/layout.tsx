@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { FixedWhatsAppButton } from "@/components/fixed-whatsapp-button";
 import { MobileContactBar } from "@/components/mobile-contact-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -89,6 +90,7 @@ export default async function LocaleLayout({
           <SiteHeader dict={dict} locale={locale} />
           <div className="flex-1">{children}</div>
           <SiteFooter dict={dict} locale={locale} />
+          <FixedWhatsAppButton labels={dict.contactLinks} />
           <MobileContactBar labels={dict.contactLinks} />
         </div>
       </body>
