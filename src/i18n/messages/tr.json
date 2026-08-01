@@ -73,7 +73,7 @@
       "customerName": "Adınız",
       "customerPhone": "Telefon",
       "preferredMessenger": "Tercih edilen iletişim",
-      "customerEmail": "Email",
+      "customerEmail": "E-posta",
       "driverAge": "Sürücü yaşı",
       "drivingExperienceYears": "Yıllık sürüş deneyimi",
       "licenceCountry": "Ehliyet ülkesi",
@@ -96,7 +96,7 @@
       "whatsapp": "WhatsApp",
       "telegram": "Telegram",
       "phone": "Telefon",
-      "email": "Email"
+      "email": "E-posta"
     },
     "yesNo": {
       "yes": "Evet",
@@ -127,7 +127,7 @@
     },
     "hero": {
       "title": "Batum'da VW Passat kiralayın.",
-      "intro": "Automatic, petrol + LPG, Batum şehir içinde veya Batum Havalimanı'na ücretsiz teslim. Önce tarihleri gönderin, ardından araç sahibi uygunluğu, sürücüyü, depozitoyu ve rotayı manuel onaylar.",
+      "intro": "Otomatik vites, benzin + LPG, Batum şehir içinde veya Batum Havalimanı'na ücretsiz teslimat. Önce tarihleri gönderin; ardından araç sahibi uygunluğu, sürücüyü, depozitoyu ve rotayı manuel olarak onaylar.",
       "primaryAction": "Uygunluğu kontrol et",
       "secondaryAction": "WhatsApp / Telegram",
       "imageAlt": "Batum sahili ve havalimanı tarzı terminal yakınında özel kiralık araç"
@@ -147,7 +147,7 @@
       },
       {
         "label": "Araç",
-        "value": "VW Passat 2013 automatic, petrol + LPG"
+        "value": "VW Passat 2013, otomatik vites, benzin + LPG"
       }
     ],
     "sections": [
@@ -161,7 +161,7 @@
       },
       {
         "title": "Anında rezervasyon veya ödeme yok",
-        "body": "İlk sürüm request-to-book modelidir. Tarihler, teslim noktası, depozito ve belgeler kiralama kabul edilmeden önce doğrudan onaylanır.",
+        "body": "İlk sürüm rezervasyon talebi modeliyle çalışır. Tarihler, teslim noktası, depozito ve belgeler kiralama kabul edilmeden önce doğrudan onaylanır.",
         "items": [
           "Bu web sitesinde online ödeme alınmaz.",
           "Talep göndermek için müşteri hesabı gerekmez."
@@ -187,11 +187,11 @@
     "car": {
       "meta": {
         "title": "VW Passat 2013 araç detayları",
-        "description": "Batum'da kiralanabilen Volkswagen Passat 2013 automatic petrol + LPG araç detayları."
+        "description": "Batum'da kiralanabilen, otomatik vitesli ve benzin + LPG yakıtlı Volkswagen Passat 2013'ün araç detayları."
       },
       "hero": {
-        "title": "Volkswagen Passat 2013 automatic.",
-        "intro": "Batum'da özel sedan: 2.5 motor, otomatik vites, petrol + LPG/gas, 5 koltuk ve 3 bavul kapasitesi."
+        "title": "Otomatik vitesli Volkswagen Passat 2013.",
+        "intro": "Batum'da özel sedan: 2,5 litrelik motor, otomatik vites, benzin + LPG, 5 koltuk ve 3 bavul kapasitesi."
       },
       "sections": [
         {
@@ -199,7 +199,7 @@
           "body": "Araç şehir içi konfor, havalimanı teslimi, otel teslimatı ve Gürcistan içi daha uzun rotalar isteyen ziyaretçiler için uygundur.",
           "items": [
             "Volkswagen Passat 2013, 2.5 motor, otomatik vites.",
-            "Petrol + LPG/gas, 5 koltuk, sedan gövde, bagaj kapasitesi: 3 bavul."
+            "Benzin + LPG, 5 koltuk, sedan gövde, bagaj kapasitesi: 3 bavul."
           ]
         },
         {
@@ -289,10 +289,10 @@
     "booking": {
       "meta": {
         "title": "Rezervasyon talebi",
-        "description": "Batum özel araç kiralama için online ödeme olmadan request-to-book yer tutucusu."
+        "description": "Batum'da özel araç kiralamak için çevrim içi ödeme gerektirmeyen rezervasyon talebi sayfası."
       },
       "hero": {
-        "title": "Request-to-book, anında rezervasyon değil.",
+        "title": "Rezervasyon talebi; anında rezervasyon değil.",
         "intro": "Bu yer tutucu v1 için rezervasyon akışını açıklar. Online ödeme ve müşteri hesabı dahil değildir."
       },
       "sections": [
@@ -410,7 +410,7 @@
           "title": "Uzaktan çalışanlar ve aileler için uygun",
           "body": "Passat; Batum şehir içi, havalimanı teslimi, alışveriş, günübirlik geziler ve planlı uzun rotalar için konforlu bir sedandır.",
           "items": [
-            "Petrol + LPG/gas uzun rotalarda yakıt maliyetini düşürebilir.",
+            "Benzin + LPG uzun rotalarda yakıt maliyetini düşürebilir.",
             "Sınır geçişi yazılı onay olmadan yasaktır."
           ]
         }
@@ -425,11 +425,11 @@
     "faq": {
       "meta": {
         "title": "Sık sorulan sorular",
-        "description": "Batum özel araç kiralama için teslimat, depozito, sigorta ve request-to-book detaylarını içeren SSS."
+        "description": "Batum'da özel araç kiralama için teslimat, depozito, sigorta ve rezervasyon talebi ayrıntılarını içeren SSS."
       },
       "hero": {
         "title": "Sık sorulan sorular.",
-        "intro": "Batum'da tek bir özel aracı manuel request-to-book akışıyla kiralayan ziyaretçiler için cevaplar."
+        "intro": "Batum'da özel bir aracı manuel rezervasyon talebiyle kiralayan ziyaretçiler için yanıtlar."
       },
       "sections": [
         {
@@ -493,7 +493,7 @@
     "privacy": {
       "meta": {
         "title": "Gizlilik politikası",
-        "description": "Batum özel araç kiralama sitesindeki request-to-book iletişim bilgileri için gizlilik yer tutucusu."
+        "description": "Batum özel araç kiralama sitesinde rezervasyon talebiyle paylaşılan iletişim bilgilerine ilişkin gizlilik açıklaması."
       },
       "hero": {
         "title": "Rezervasyon talepleri için gizlilik.",
