@@ -62,13 +62,25 @@ export function BookingForm({ labels, locale }: BookingFormProps) {
           </div>
 
           {state.status === "error" ? (
-            <p className="mx-5 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800 sm:mx-8">
+            <p
+              className="mx-5 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800 sm:mx-8"
+              role="alert"
+            >
               {labels.validationError}
             </p>
           ) : null}
 
           <form action={action} className="grid gap-8 p-5 sm:p-8">
             <input name="locale" type="hidden" value={locale} />
+            <label aria-hidden="true" className="hidden">
+              Website
+              <input
+                autoComplete="off"
+                name="website"
+                tabIndex={-1}
+                type="text"
+              />
+            </label>
 
             <fieldset className={fieldsetClass}>
               <legend className="text-lg font-semibold text-[#101820]">
