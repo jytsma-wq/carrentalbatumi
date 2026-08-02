@@ -19,6 +19,12 @@ export async function submitBookingRequest(
     typeof localeValue === "string" && isLocale(localeValue)
       ? localeValue
       : defaultLocale;
+  const honeypot = formData.get("website");
+
+  if (typeof honeypot === "string" && honeypot.trim()) {
+    redirect(`/${locale}/request-received`);
+  }
+
   const normalized = normalizeBookingFormData(Object.fromEntries(formData));
   const parsed = bookingRequestSchema.safeParse(normalized);
 
